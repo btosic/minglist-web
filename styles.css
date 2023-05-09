@@ -13,14 +13,43 @@ body, html {
   background-size: cover;
 }
 
-@media (max-width:542px) {
+.minglist-text {
+  position:absolute;
+  top: 57%;
+  left: 10%;
+  transform:translate(0%,-50%);
+  -ms-transform:translate(-0%,-50%)
+}
+
+.minglist-text > img {
+  height: 360px;
+}
+
+@media (max-width:768px) {
+  
   .bgimg {
     background-image: url('bg_small.jpg');
-    min-height: 100%;
-    min-width: 100%;
+    min-height: unset;
+    max-height: unset;
+    height: 100%;
+    /* min-width: 100%; */
     background-position: center;
     background-size: cover;
   }
+
+  .minglist-text {
+    position:absolute;
+    top: unset;
+    bottom: 15%;
+    left: 48%;
+    transform: translate(-50%,50%);
+    -ms-transform: translate(-50%,50%);    
+  }
+
+  .minglist-text > img {
+    height: 240px;
+  }
+  
 }
 
 .w3-modal-content {
