@@ -1,0 +1,36 @@
+﻿body, h1, h5 {
+  font-family: "Raleway", sans-serif
+}
+
+body, html {
+  height: 100%
+}
+
+.bgimg {
+  background-image: url('bg_right.jpg');
+  min-height: 100%;
+  background-position: right;
+  background-size: cover;
+}
+
+@media (max-width:542px) {
+  .bgimg {
+    background-image: url('bg_small.jpg');
+    min-height: 100%;
+    min-width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.w3-modal-content {
+  width: 600px;
+}
+
+.w3-container {
+  padding: 24px;
+}
+
+.w3-display-left {
+  margin-left: 10%;
+}
